@@ -6,6 +6,7 @@
     padding: 15px 40px;
     align-items: center;
 }
+
 .logo{
     flex-grow: 1;
 }
@@ -90,16 +91,16 @@ body{
 .contenedor-doble {
   display: flex;
   gap: 40px;
-  padding: 80px 60px;
-  background-color: #f5f5f5;
+  padding: 2% 8%;
+  background-color: white;
   position: relative;
 }
 
 .contenedor-doble::before {
   content: "";
   position: absolute;
-  top: 80px;
-  bottom: 80px;
+  top: 10%;
+  bottom: 5%;
   left: 50%;
   width: 1px;
   background-color: #ddd;
@@ -115,7 +116,8 @@ body{
 }
 
 .titulo-seccion{
-  font-size: 30px;
+  font-size: 40px;
+  
 }
 
 .lista-formacion,
@@ -128,10 +130,11 @@ body{
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  background: #ffffff;
+  background: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
   transition: 0.3s;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .item-formacion:hover {
@@ -141,10 +144,11 @@ body{
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  background: #ffffff;
+  background: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
   transition: 0.3s;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .item-habilidad:hover {
@@ -156,13 +160,15 @@ body{
   min-width: 40px;
 }
 .portfolio {
-  padding: 40px 80px 100px;
+  margin-top: 2.5%;
+  padding: 0 5% 5%;
   background-color: #ffffff;
 }
 
 .portfolio .titulo-seccion {
   font-size: 48px;
-  margin-bottom: 60px;
+  margin-bottom: 5%;
+  margin-left: 4.5%;
 }
 
 .grid-portfolio {
@@ -216,4 +222,138 @@ body{
   font-size: 16px;
   text-decoration: none;
   color: black;
+}
+
+.experiencia {
+  padding: 0% 10%;
+  background-color: white;
+}
+
+.experiencia .titulo-seccion {
+  font-size: 48px;
+  margin-bottom: 3%;
+  color: #333;
+}
+
+.lista-experiencia {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.item-experiencia {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item-experiencia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.item-experiencia .icono {
+  font-size: 26px;
+  color: #555;
+  min-width: 40px;
+  margin-top: 4px;
+}
+
+.item-experiencia .contenido h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.item-experiencia .contenido span {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #777;
+}
+
+.item-experiencia .contenido p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+h2,h3,h4,p,span,body,h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.contacto {
+  padding: 2% 2%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.grupo label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.grupo input,
+.grupo select,
+.grupo textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.grupo input:focus,
+.grupo select:focus,
+.grupo textarea:focus {
+  border-color: #777;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #555;
 }
