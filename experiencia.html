@@ -12,24 +12,29 @@
 
     </head>
     <body>
-        <header class="header">
-            <div class="logo">
-                <img src="imágenes/logos/logoutn.svg" alt="Logo UTN">
-            </div>
-            <nav class="nav">
-                <a href="index.html">Inicio</a>
-                <a href="formacion.html">Formación</a>
-                <a href="experiencia.html">Experiencia</a>
-                <a href="proyectos.html">Proyectos</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-            <div class="social">
-                <a class = "fa-brands fa-github" href="https://github.com"></a>
-                <a class = "fa-brands fa-linkedin" href="https://linkedin.com"></a>
-                <a class = "fa-brands fa-facebook" href="https://facebook.com"></a>
-                <a class = "fa-brands fa-instagram" href="https://instagram.com"></a>
-            </div>
-        </header>
+        <input type="checkbox" id="theme-toggle" class="theme-toggle">
+    <div class="page">
+    <header class="header">
+        <div class="logo">
+            <img src="imágenes/logos/logoutn.svg" alt="Logo UTN">
+        </div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="formacion.html">Formación</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+       <label for="theme-toggle" class="theme-switch">
+            <span class="theme-switch__text theme-switch__text--light">LIGHT MODE</span>
+            <span class="theme-switch__text theme-switch__text--dark">DARK MODE</span>
+
+            <span class="theme-switch__thumb">
+                <i class="fa-solid fa-sun theme-icon theme-icon--sun"></i>
+                <i class="fa-solid fa-moon theme-icon theme-icon--moon"></i>
+            </span>
+        </label>
+    </header>
 
         <section class="experiencia">
             <h2 class="titulo-seccion">Experiencia</h2>
@@ -79,5 +84,15 @@
                 </div>
             </div>
         </section>
-    </body>
+     <footer class="footer">
+        <div class="footer-redes">
+            <a class="fa-brands fa-github" href="https://github.com" target="_blank"></a>
+            <a class="fa-brands fa-linkedin" href="https://linkedin.com" target="_blank"></a>
+            <a class="fa-brands fa-facebook" href="https://facebook.com" target="_blank"></a>
+            <a class="fa-brands fa-instagram" href="https://instagram.com" target="_blank"></a>
+        </div>
+        <p>© 2026 Juancito Pérez</p>
+    </footer>
+    </div>
+</body>
 </html>
